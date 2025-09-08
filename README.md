@@ -7,11 +7,12 @@ The environment consists of:
 - **Database container** (MySQL 8, seeded from `/database` scripts)
 
 ### Diagrams
-Provided system:
-![Provided Flow](./public/provided.png)
+Provided system:  
+<img src="./public/provided.png" alt="Provided Flow" width="600"/>
 
-Implemented API flow:
-![API Flow](./public/api.png)
+Implemented API flow:  
+<img src="./public/api.png" alt="API Flow" width="600"/>
+
 
 ## 3) Tech Stack
 - Node.js + Express

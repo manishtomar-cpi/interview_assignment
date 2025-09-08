@@ -5,7 +5,7 @@ import swaggerUi from "swagger-ui-express";
 import { swaggerSpec } from "./config/swagger.js";
 import dashboardRoutes from "./routes/dashboard.routes.js";
 import healthRoutes from "./routes/health.routes.js";
-import { errorHandler } from "./middlewares/error.js";
+import { errorHandler } from "./middlewares/errorHandler.js";
 //function for creating the server
 export function createServer() {
   const app = express();

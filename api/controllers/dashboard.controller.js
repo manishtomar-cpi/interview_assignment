@@ -8,7 +8,7 @@ export async function getDashboard(req, res, next) {
     //getting data from service
     const rows = await listDashboards();
 
-    //check - if no dashboards exists
+    //check - if no dashboard exists
     if (rows.length === 0) {
       return res.status(200).json([]);
     }

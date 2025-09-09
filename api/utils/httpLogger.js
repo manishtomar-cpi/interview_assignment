@@ -17,9 +17,9 @@ export const httpLogger = pinoHttp({
   serializers: {
     req(req) {
       return {
-        id: req.id,          // request ID if you use requestId middleware
-        method: req.method,  // GET, POST, etc.
-        url: req.url,        // route path
+        id: req.id,        
+        method: req.method, 
+        url: req.url,       
       };
     },
     res(res) {

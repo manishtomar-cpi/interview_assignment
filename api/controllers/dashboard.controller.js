@@ -6,15 +6,15 @@ import { toIso } from "../utils/toIso.js";
 export async function getDashboard(req, res, next) {
   try {
     //getting data from service
-    const rows = await listDashboards();
+    const dashboards = await listDashboards();
 
     //check - if no dashboard exists
-    if (rows.length === 0) {
+    if (dashboards.length === 0) {
       return res.status(200).json([]);
     }
 
     //cleaning the query response
-    const data = rows.map((row) => ({
+    const data = dashboards.map((row) => ({
       id: row.id,
       createdAt: toIso(row.createdAt),
       updatedAt: toIso(row.updatedAt),

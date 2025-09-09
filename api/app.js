@@ -15,7 +15,6 @@ export function createServer() {
 
   //security and json
   app.use(corsMiddleware);
-  app.options("*", corsMiddleware);
   app.use(express.json({ limit: "1mb" }));
 
   //logging

@@ -5,7 +5,7 @@ import { logger } from "./logger.js";
 export const httpLogger = pinoHttp({
   logger,
 
-  // Choose log level based on status code or error presence
+  // choose log level based on status code or error presence
   customLogLevel: function (res, err) {
     if (err instanceof Error) return "error";    // runtime error
     if (res.statusCode >= 500) return "error";   // server error
@@ -13,7 +13,7 @@ export const httpLogger = pinoHttp({
     return "info";                               // success
   },
 
-  // Limit what we log for requests
+  // limit what we log for requests
   serializers: {
     req(req) {
       return {

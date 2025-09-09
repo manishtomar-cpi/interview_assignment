@@ -1,4 +1,4 @@
-//help us to get the structured logs on console on each request 
+//help us to get the structured logs on console
 import pinoHttp from "pino-http";
 import { logger } from "./logger.js";
 
